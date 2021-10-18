@@ -44,7 +44,6 @@ body {
 .container {
   width: 1200px;
   align-content: center;
-  outline: black dashed 2px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
@@ -59,12 +58,18 @@ body {
   text-decoration: none;
 }
 
+.section {
+  padding-bottom: 94px;
+}
+
 .section-title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.67;
   letter-spacing: 0.03em;
   color: var(--primary-font-color);
+  margin-bottom: 50px;
+  text-align: center;
 }
 
 .text-white {
@@ -88,7 +93,7 @@ body {
   margin: -1px;
 }
 
-/* Main logo in both header and footer */
+/* Header and Footer logo */
 
 .logo-black {
   font-family: 'raleway', sans-serif;
@@ -107,6 +112,9 @@ body {
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--white);
+  padding-top: 60px;
+  margin-bottom: 20px;
+  display: block;
 }
 
 .logo-blue-web {
@@ -179,18 +187,26 @@ body {
 
 /* Hero section */
 
+.hero-box {
+  display: flex;
+  flex-direction: column;
+}
+
 .hero-title {
+  display: block;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.5;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--white);
+  width: 696px;
+  text-align: center;
+  margin: 200px auto 30px;
 }
 
 .hero-btn {
-  width: 200px;
-  height: 50px;
+  display: inline-block;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   font-weight: 700;
@@ -199,46 +215,98 @@ body {
   letter-spacing: 0.06em;
   color: var(--white);
   background-color: var(--active-color);
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 200px;
+  padding: 10px 32px;
+  min-width: 136px;
+  min-height: 30px;
 }
 
-/* Work principles section */
+/* Work methods */
 
-.principle {
+.methods {
+  padding-top: 94px;
+}
+
+.methods-list {
+  display: flex;
+}
+
+.methods-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.methods-title {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--primary-font-color);
+  width: 270px;
+  margin-bottom: 10px;
 }
 
-.principle-desc {
+.methods-info {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--secondary-font-color);
+  width: 270px;
 }
 
-/* What we do section */
-/* Our team section */
+/* Activities section */
 
-.our-team {
+.activities-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Team section */
+
+.team {
   background-color: var(--inactive-color);
 }
 
-.our-team-name {
+.team-item {
+  height: 368px;
+  width: 270px;
+  background-color: var(--white);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.team-list {
+  display: flex;
+}
+
+.team-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.team-pic {
+  margin-bottom: 30px;
+}
+
+.team-name {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--primary-font-color);
+  text-align: center;
+  margin-bottom: 10px;
 }
 
-.our-team-role {
+.team-role {
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--secondary-font-color);
+  text-align: center;
+  margin-bottom: 30px;
 }
 
 /* portfolio */
@@ -275,11 +343,20 @@ body {
 
 /* Footer */
 
+.address-item:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.address:last-child {
+  padding-bottom: 60px;
+}
+
 .address-link {
   font-size: 14px;
   font-style: normal;
   line-height: 1.71;
   letter-spacing: 0.03em;
+  display: block;
 }
 
 .address-link:hover,
