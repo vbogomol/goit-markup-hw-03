@@ -31,6 +31,7 @@ ul {
 
 body {
   font-family: 'roboto', sans-serif;
+  width: 1600px;
 }
 
 .background-grey {
@@ -48,6 +49,11 @@ body {
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
+  /* outline: orange solid 2px;*/
+}
+
+img {
+  vertical-align: bottom;
 }
 
 .list {
@@ -270,8 +276,6 @@ body {
 }
 
 .team-item {
-  height: 368px;
-  width: 270px;
   background-color: var(--white);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -311,6 +315,26 @@ body {
 
 /* portfolio */
 
+.portfolio {
+  padding-top: 94px;
+}
+
+.button-list {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+  padding-bottom: 16px;
+  margin-bottom: 34px;
+}
+
+.button-item:not(:last-child) {
+  margin-right: 8px;
+}
+
+.portfolio-btn {
+  display: inline-block;
+}
+
 .portfolio-btn {
   font-weight: 500;
   font-size: 16px;
@@ -318,12 +342,37 @@ body {
   letter-spacing: 0.03em;
   color: var(--primary-font-color);
   background-color: var(--inactive-color);
+  padding: 6px 22px;
+  border-radius: 4px;
+  border-color: transparent;
 }
 
 .portfolio-btn:focus,
 .portfolio-btn:hover {
   color: var(--white);
   background-color: var(--active-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+.portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.portfolio-item {
+  width: calc((100% - 60) / 3);
+  margin-right: 30px;
+  margin-bottom: 30px;
+  background: var(--white);
+}
+
+.portfolio-item:nth-child(3n) {
+  margin-right: 0;
+}
+
+.portfolio-item:nth-last-child(-n + 3) {
+  margin-bottom: 0;
 }
 
 .portfolio-title {
@@ -332,6 +381,7 @@ body {
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--primary-font-color);
+  padding: 20px 24px 4px 24px;
 }
 
 .portfolio-text {
@@ -339,6 +389,13 @@ body {
   line-height: 1.88;
   letter-spacing: 0.03em;
   color: var(--secondary-font-color);
+  padding: 0px 24px 20px 24px;
+}
+
+.portfolio-card {
+  border-left: 1px solid #eee;
+  border-right: 1px solid #eee;
+  border-bottom: 1px solid #eee;
 }
 
 /* Footer */

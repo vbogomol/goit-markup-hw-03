@@ -56,123 +56,151 @@
     <!-- Содержимое сайта -->
     <main>
       <!-- Портфолио -->
-      <section>
-        <h1 class="visually-hidden">Наше портфолио</h1>
-        <ul class="list">
-          <li><button class="btn portfolio-btn" type="button">Все</button></li>
-          <li>
-            <button class="btn portfolio-btn" type="button">Веб-сайты</button>
-          </li>
-          <li>
-            <button class="btn portfolio-btn" type="button">Приложения</button>
-          </li>
-          <li>
-            <button class="btn portfolio-btn" type="button">Дизайн</button>
-          </li>
-          <li>
-            <button class="btn portfolio-btn" type="button">Маркетинг</button>
-          </li>
-        </ul>
-        <ul class="list">
-          <li>
-            <img
-              src="./images/portfolio-1.jpg"
-              alt="Веб-сайт Технокряк"
-              width="370"
-              height="294"
-            />
-            <h2 class="portfolio-title">Технокряк</h2>
-            <p class="portfolio-text">Веб-сайт</p>
-          </li>
-          <li>
-            <img
-              src="./images/portfolio-2.jpg"
-              alt="Дизайн баскетбольного постера"
-              width="370"
-              height="294"
-            />
-            <h2 class="portfolio-title">
-              Постер <span lang="en">Orlean vs Golden Star</span>
-            </h2>
-            <p class="portfolio-text">Дизайн</p>
-          </li>
-          <li>
-            <img
-              src="./images/portfolio-3.jpg"
-              alt="Приложение для ресторана морской кухни"
-              width="370"
-              height="294"
-            />
-            <h2 class="portfolio-title">
-              Ресторан <span lang="en">Seafood</span>
-            </h2>
-            <p class="portfolio-text">Приложение</p>
-          </li>
-          <li>
-            <img
-              src="./images/portfolio-4.jpg"
-              alt="Маркетинг товаров"
-              width="370"
-              height="294"
-            />
-            <h2 class="portfolio-title">Проект <span lang="en">Prime</span></h2>
-            <p class="portfolio-text">Маркетинг</p>
-          </li>
-          <li>
-            <img
-              src="./images/portfolio-5.jpg"
-              alt="Приложение Проект Коробки"
-              width="370"
-              height="294"
-            />
-            <h2 class="portfolio-title">Проект <span lang="en">Boxes</span></h2>
-            <p class="portfolio-text">Приложение</p>
-          </li>
-          <li>
-            <img
-              src="./images/portfolio-6.jpg"
-              alt="Веб-сайт"
-              width="370"
-              height="294"
-            />
-            <h2 class="portfolio-title" lang="en">
-              Inspiration has no Borders
-            </h2>
-            <p class="portfolio-text">Веб-сайт</p>
-          </li>
-          <li>
-            <img
-              src="./images/portfolio-7.jpg"
-              alt="Дизайн журнала"
-              width="370"
-              height="294"
-            />
-            <h2 class="portfolio-title">
-              Издание <span lang="en">Limited Edition</span>
-            </h2>
-            <p class="portfolio-text">Дизайн</p>
-          </li>
-          <li>
-            <img
-              src="./images/portfolio-8.jpg"
-              alt="Дизайн бренда"
-              width="370"
-              height="294"
-            />
-            <h2 class="portfolio-title">Проект <span>LAB</span></h2>
-            <p class="portfolio-text">Маркетинг</p>
-          </li>
-          <li>
-            <img
-              src="./images/portfolio-9.jpg"
-              alt="Приложение для развития бизнеса"
-              width="370"
-              height="294"
-            />
-            <h2 class="portfolio-title" lang="en">Growing Business</h2>
-            <p class="portfolio-text">Приложение</p>
-          </li>
-        </ul>
+      <section class="section portfolio">
+        <div class="portfolio-box container">
+          <h1 class="visually-hidden">Наше портфолио</h1>
+          <ul class="button-list list">
+            <li class="button-item">
+              <button class="portfolio-btn btn" type="button">Все</button>
+            </li>
+            <li class="button-item">
+              <button class="portfolio-btn btn" type="button">Веб-сайты</button>
+            </li>
+            <li class="button-item">
+              <button class="portfolio-btn btn" type="button">
+                Приложения
+              </button>
+            </li>
+            <li class="button-item">
+              <button class="portfolio-btn btn" type="button">Дизайн</button>
+            </li>
+            <li class="button-item">
+              <button class="portfolio-btn btn" type="button">Маркетинг</button>
+            </li>
+          </ul>
+          <ul class="portfolio-list list">
+            <li class="portfolio-item">
+              <img
+                src="./images/portfolio-1.jpg"
+                alt="Веб-сайт Технокряк"
+                width="370"
+                height="294"
+              />
+              <div class="portfolio-card">
+              <h2 class="portfolio-title">Технокряк</h2>
+              <p class="portfolio-text">Веб-сайт</p>
+              </div>
+            </li>
+            <li class="portfolio-item">
+              <img
+                src="./images/portfolio-2.jpg"
+                alt="Дизайн баскетбольного постера"
+                width="370"
+                height="294"
+              />
+              <div class="portfolio-card">
+              <h2 class="portfolio-title">
+                Постер <span lang="en">Orlean vs Golden Star</span>
+              </h2>
+              <p class="portfolio-text">Дизайн</p>
+              </div>
+            </li>
+            <li class="portfolio-item">
+              <img
+                src="./images/portfolio-3.jpg"
+                alt="Приложение для ресторана морской кухни"
+                width="370"
+                height="294"
+              />
+              <div class="portfolio-card">
+              <h2 class="portfolio-title">
+                Ресторан <span lang="en">Seafood</span>
+              </h2>
+              <p class="portfolio-text">Приложение</p>
+              </div>
+            </li>
+            <li class="portfolio-item">
+              <img
+                src="./images/portfolio-4.jpg"
+                alt="Маркетинг товаров"
+                width="370"
+                height="294"
+              />
+              <div class="portfolio-card">
+              <h2 class="portfolio-title">
+                Проект <span lang="en">Prime</span>
+              </h2>
+              <p class="portfolio-text">Маркетинг</p>
+              </div>
+            </li>
+            <li class="portfolio-item">
+              <img
+                src="./images/portfolio-5.jpg"
+                alt="Приложение Проект Коробки"
+                width="370"
+                height="294"
+              />
+              <div class="portfolio-card">
+              <h2 class="portfolio-title">
+                Проект <span lang="en">Boxes</span>
+              </h2>
+              <p class="portfolio-text">Приложение</p>
+              </div>
+            </li>
+            <li class="portfolio-item">
+              <img
+                src="./images/portfolio-6.jpg"
+                alt="Веб-сайт"
+                width="370"
+                height="294"
+              />
+              <div class="portfolio-card">
+              <h2 class="portfolio-title" lang="en">
+                Inspiration has no Borders
+              </h2>
+              <p class="portfolio-text">Веб-сайт</p>
+              </div>
+            </li>
+            <li class="portfolio-item">
+              <img
+                src="./images/portfolio-7.jpg"
+                alt="Дизайн журнала"
+                width="370"
+                height="294"
+              />
+              <div class="portfolio-card">
+              <h2 class="portfolio-title">
+                Издание <span lang="en">Limited Edition</span>
+              </h2>
+              <p class="portfolio-text">Дизайн</p>
+              
+            </li>
+            <li class="portfolio-item">
+              <img
+                src="./images/portfolio-8.jpg"
+                alt="Дизайн бренда"
+                width="370"
+                height="294"
+              />
+              <div class="portfolio-card">
+              <h2 class="portfolio-title">Проект <span>LAB</span></h2>
+              <p class="portfolio-text">Маркетинг</p>
+              </div>
+            </li>
+            <li class="portfolio-item">
+              <img
+                src="./images/portfolio-9.jpg"
+                alt="Приложение для развития бизнеса"
+                width="370"
+                height="294"
+              />
+              <div class="portfolio-card">
+              <h2 class="portfolio-title" lang="en">Growing Business</h2>
+              <p class="portfolio-text">Приложение</p>
+              </div>
+            </li>
+          </ul>
+        </div>
       </section>
     </main>
     <!--Подвал сайта-->
